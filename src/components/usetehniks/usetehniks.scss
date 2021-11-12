@@ -1,0 +1,30 @@
+.usetehniks {
+
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+
+    h2 {
+        margin-bottom: 10px;
+        margin-left: 6px;
+    }
+
+    &__items {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+    }
+
+    &__item {
+        display: flex;
+        flex-flow: row nowrap;
+        flex: 1;
+        align-items: flex-end;
+        min-height: 100px;
+        justify-content: center;
+
+        p {
+            margin: 56px 32px;
+        }
+    }
+}

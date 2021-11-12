@@ -1,0 +1,56 @@
+@import "../../styles/helpers/_helpers";
+
+.blockangle {
+
+
+    display: flex;
+
+    flex-flow: column wrap;
+    margin: 170px 0;
+    justify-content: center;
+
+    @include min-screen(1024px) {
+        flex-flow: row wrap;
+        margin-right: 4rem;
+
+    }
+}
+
+.blockangle__item {
+
+    display: flex;
+    position: relative;
+
+    clip-path: polygon(80px 0, 100% 0, calc(100% - 80px) 100%, 0 100%);
+    background-repeat: no-repeat;
+    margin-bottom: 1rem;
+    flex: 1 0 33%;
+    background-size: cover;
+
+    @include min-screen(1024px) {
+
+        margin-right: -3.5rem;
+    }
+
+    min-height: 226px;
+
+    h3 {
+        color: #fff;
+        text-transform: uppercase;
+        margin: auto;
+        padding: 4rem 6rem;
+    }
+
+}
+
+.one {
+    background-image: url("../../img/angleone.png");
+}
+
+.two {
+    background-image: url("../../img/angletwo.png");
+}
+
+.three {
+    background-image: url("../../img/anglethree.png");
+}

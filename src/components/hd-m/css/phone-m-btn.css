@@ -1,0 +1,23 @@
+.phone-m-btn {
+  height: 100%;
+}
+
+.hd-m .phone-m-btn__link {
+  background-image: url("../img/icons/phone-w.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.menu-m-panel .phone-m-btn__link {
+  background-image: url("../img/icons/phone-w.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.phone-m-btn__link {
+  display: block;
+  height: 100%;
+  width: 56px;
+  text-indent: -999999px;
+  border-bottom: none;
+}

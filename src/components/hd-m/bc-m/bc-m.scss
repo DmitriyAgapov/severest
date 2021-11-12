@@ -1,0 +1,10 @@
+@import "../../../styles/helpers/_helpers";
+
+.bc-m {
+    margin: 34px 7px;
+    display: none;
+
+    @include max-screen(1023px) {
+        display: block;
+    }
+}

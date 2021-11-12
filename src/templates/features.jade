@@ -1,0 +1,81 @@
+extends layout/default
+
+block variables
+    - const title = "Преимщества";
+    - const description = '';
+    - const keywords = '';
+    - const pageClass = '';
+    - const dealers = [{"title":"Дилеры рядом с вами","textposition":"left","backgroundcolor":"section_features blue","background":"img/bg-dealers.jpg","description":"<span class='bignum'>25</span> официальных дилеров и сертифицированных сервисных центров по <span class='bigtext'>России</span> и  <span class='bigtext'>СНГ</span>","button":{"title":"Найти диллера","style":"inverse"}}];
+    - const zapas = [{"title":"Большой запас прочности","textposition":"left","backgroundcolor":"section_features white norightcorner titleblue","background":"img/bg-features-zapas-prochnosti.png","description":"Надежность конструкции протестирована в электронном симулятрое <strong>SolidWorks simulation</strong> при завышенной в 2 раза нагрузке и в реальных условиях."}];
+    - const parts = [{"title":"Комплектующие от ведущих производителей","textposition":"textright","backgroundcolor":"section_features blue","background":"img/bg-features-bpw.png","description":"Оси и подвески <strong>SAF</strong> и <strong>BPW</strong>, тормозные системы <strong>WABCO</strong> с системой <strong>EBS</strong> и другие комплетующие признанные во всем мире и проверенные временем."}];
+    - const paint = [{"title":"Качественная технология покраски","textposition":"left","backgroundcolor":"section_features white angleleft-blue titleblue","background":"img/bg-features-paint.png","description":"Предварительная дробеструйная обработка поверхности, многослойная окраска немецкими 2-компонентными эмалями делает покрытие практически вечным."}];
+    - const lightconstr = [{"title":"Облегченная конструкция","textposition":"textright","backgroundcolor":"section_features orange titlewhite textwhite","background":"img/bg-features-light-construct.png","description":"Используем высокопрочные зарубежные стали SSAB S700 в наиболее нагруженных местах для снижения массы конструкции с сохранением прочности."}];
+    - const brandcist = [{"title":"Брендирование цистерны","textposition":"left","backgroundcolor":"section_features white angleleft-orange titleblue","background":"img/bg-features-brand-cist.png","description":"По вашему желанию цистерна может быть облицована зеркальной сталью либо окрашена в соответствии с Вашим брендбуком"}];
+    - const svarka = [{"title":"100% надежность сварки","textposition":"textright","backgroundcolor":"section_features blue","background":"img/bg-features-svarka.png","description":"Многоступенчатая система контроля качества сварных соединений, включающая ультразвуковой контроль, проверку на герметичность и проверку давлением"}];
+    - const countprice = [{"title":"Расчитать стоимость","textposition":"left","backgroundcolor":"section_features white angleleft-blue titleblue count","background":"img/bg-features-count.png","description":"Соберите собственную конфинурацию техники и получите коммерческое предложение","button": {"title": "Конфигуратор", "style": "" }}];
+    
+block styles
+    //+style("http://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css")
+    //+style('https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css')
+    //- +style('https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.css')
+    +style('https://cdn.jsdelivr.net/npm/lightgallery/dist/css/lightgallery.min.css')
+    +style('css/common.min.css')        // базовые стили
+    //-+style('css/lightgallery.css')      // фотогаллерея
+    +style('css/hd.min.css')            // Шапка
+    +style('css/nv-menu.min.css')       // Навигация
+    +style('css/search.min.css')        // Поиск
+    +style('css/bc.min.css')            // Хлебные крошки
+    +style('css/nd-page.min.css')       // Текстовая страница
+    +style('css/gallery.min.css')       // Галлерея
+    +style('css/introcontent.min.css')         // Блок Интро в шапке
+    +style('css/tabpanel.min.css')          // Блок табов
+    +style('css/tablecontent.min.css')      // Блок таблица моделей
+    +style('css/ft.min.css')            // Подвал
+    +style('css/sectionangle.min.css')            // 3 Косых блока
+    +style('css/hd-m.min.css')       // Текстовая страница
+    +style('css/bc-m.min.css')       // Текстовая страница
+    +style('css/burger.min.css')       // Текстовая страница
+    +style('css/logo-m.min.css')       // Текстовая страница
+    +style('css/menu-m-panel.min.css')       // Текстовая страница
+    +style('css/nv-m.min.css')       // Текстовая страница
+    +style('css/phone-m-btn.min.css')       // Текстовая страница
+    +style('css/search-m.min.css')       // Текстовая страница
+    //-+style('css/search-m-btn.min.css')       // Текстовая страница
+    +style('css/close.min.css')            // Подвал
+    +style('css/nv-m-menu.min.css')            // Подвал
+
+block scripts
+    +script('https://cdn.jsdelivr.net/npm/jquery@1.11.0/dist/jquery.min.js')
+    //+script('https://cdn.jsdelivr.net/npm/jquery-once@2.2.0/jquery.once.min.js')
+    +script("https://code.jquery.com/ui/1.11.4/jquery-ui.min.js")
+    //+script('https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js')
+    //+script('https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js')
+    +script('https://cdn.jsdelivr.net/npm/lightgallery/dist/js/lightgallery-all.min.js')
+    //+script('https://cdn.jsdelivr.net/npm/inputmask/dist/min/jquery.inputmask.bundle.min.js')
+    //-+script('js/lightgallery.js')       // фотогаллерея
+    +script('js/tabpanel.min.js')         // Вкладки
+    +script('js/search.min.js')         // Поиск
+    +script('js/burger.min.js')         // Поиск
+    +script('js/menu-m-panel.min.js')         // Поиск
+    +script('js/theme.min.js')          // кастомный файл
+    +script('js/close.min.js')          // кастомный файл
+
+
+block content
+    .wrapper
+        .head.model-page
+            include ../components/hd/hd/hd
+            include ../components/hd-m/hd-m/hd-m
+            .container-fluid  
+                include ../components/bc/bc
+            include ../components/introcontent/introcontent
+        include ../components/tabpanel/tabpanel 
+        
+
+                
+        
+        include ../components/sectionangle/sectionangle 
+        include ../components/section-consult/sectionconsult       
+        
+        
+    include ../components/ft/ft

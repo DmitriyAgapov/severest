@@ -1,0 +1,96 @@
+@import "../../../styles/helpers/_helpers";
+
+.hd {
+	position: relative;
+
+	@include max-screen(1023px) {
+		display: none;
+	}
+}
+
+.hd__top {
+	display: flex;
+	justify-content: flex-end;
+	padding-top: 1.25rem;
+	margin-bottom: 1rem;
+	align-items: center;
+
+}
+
+.hd__phones,
+.hd__email {
+	margin-right: 54px;
+	position: relative;
+}
+
+.hd__phones {
+	padding-left: 23px;
+	font-style: normal;
+	font-weight: bold;
+	position: relative;
+	font-size: 17px;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 6px;
+		left: 0;
+		@include svgsprite(phone);
+	}
+}
+
+.hd__phone {
+	color: #373939;
+	border-bottom: none;
+
+}
+
+.hd__email {
+	padding-left: 28px;
+	font-size: map-get($fontSize, normaMinus);
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 6px;
+		left: 0;
+		@include svgsprite(mail);
+	}
+}
+
+.hd__recall {
+	margin-right: 49px;
+	font-size: map-get($fontSize, normaMinus);
+}
+
+.hd__logo {
+
+	@include svgsprite(logo);
+	background-repeat: no-repeat;
+	margin-right: 6rem;
+
+}
+
+.hd__bottom {
+	position: relative;
+	display: flex;
+	align-items: center;
+	//margin-bottom: 60px;
+}
+
+.logos {
+	max-width: 20rem;
+	width: 100%;
+	height: auto;
+}
+
+.hd__logos {
+	max-width: 11.625rem;
+	margin-right: 2.25rem;
+
+	@include min-screen(1366px) {
+		max-width: 20.5rem;
+		margin-right: 6.5rem;
+
+	}
+}

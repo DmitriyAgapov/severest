@@ -1,0 +1,28 @@
+link(rel="stylesheet", href="../b/b.scss")
+link(rel="stylesheet", href="./b-news-front.scss")
+
+// b + b-news (css)
++b.b.b-news
+    +e.hd
+        +e.H2.title Пресс-центр
+        include ../arrows/arrows-horizontal       
+    +e.cont
+        +e.news
+            +e.item
+                e.img
+                    IMG(src="img/temp/presscenter1.jpg")
+                +e.text
+                    H4 Нам присвоен статус QualifiedPartner by Mercedes-Benz Trucks
+                    SPAN.date 25.01.2017
+                    +e.A(href="#").link Подробнее
+            +e.item
+                e.img
+                    IMG(src="img/temp/presscenter2.jpg")
+                +e.text
+                    H4 Обзор пневматической подвески BPW-43500
+                    SPAN.date 25.01.2017
+                    +e.A(href="#").link Подробнее                   
+    +e.ft_centered
+        +btnLink('#', 'corner _size-2', 'centered') Все публикации
+            span.border
+// КОНЕЦ: b + b-news (css)

@@ -1,0 +1,211 @@
+@import "../../styles/helpers/_helpers";
+
+.tablecontent {}
+
+.tablecontent__row {
+    display: flex;
+    padding: 30px 0;
+    border-bottom: 1px solid #D9D9D9;
+
+    @include min-screen(1024px) {
+        display: grid;
+        grid-template-columns: 14rem auto;
+    }
+}
+
+.tablecontent__row:first-child {
+    border-bottom: 1px solid transparent;
+
+    @include min-screen(1024px) {
+        display: grid;
+        grid-template-columns: 21rem 1fr 1fr 1fr 2fr 2fr;
+        grid-template-rows: auto;
+        gap: 0px 0px;
+    }
+}
+
+.tablecontent__image {
+    max-width: 50vw;
+
+    @include min-screen(768px) {
+        max-width: 30%;
+    }
+
+    @include min-screen(1024px) {
+        max-width: initial;
+    }
+}
+
+
+
+.tablecontent__info {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+
+    @include min-screen(768px) {
+        flex: 1;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+    }
+
+    @include min-screen(1024px) {
+
+        display: grid;
+        grid-template-columns: 7rem 5fr 2fr;
+        align-items: center;
+
+    }
+}
+
+.tablecontent__main,
+.tablecontent__deatails {
+    @include min-screen(768px) {
+        max-width: 40vw;
+        flex: 1 60%;
+    }
+}
+
+.tablecontent__price {
+    @include min-screen(768px) {
+        flex: 1 40%;
+        max-width: 30vw;
+
+
+        text-align: right;
+
+    }
+}
+
+.tablecontent__main {
+    display: inline-flex;
+}
+
+.tablecontent__deatails {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+
+    @include min-screen(1024px) {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 2fr;
+
+    }
+}
+
+.tablecontent__link {
+    margin-right: 1rem;
+}
+
+.tablecontent__deatails>div {
+    margin-right: 0.25rem;
+}
+
+.tablecontent__model {
+    //grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    border-bottom: 1px solid #D9D9D9;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+
+.tablecontent__art {
+    padding: 2px 10px;
+    background: #969696;
+    font-size: 13px;
+    line-height: 17px;
+    font-weight: 700;
+    color: #fff;
+    display: none;
+    overflow: hidden;
+}
+
+.tablecontent__volume,
+.tablecontent__sections,
+.tablecontent__dia,
+.tablecontent__chassis,
+.tablecontent__pricevalue {
+
+    font-size: map-get($fontSize, normaPlus);
+}
+
+.tablecontent__volume {
+    font-weight: 700;
+
+    span {
+        font-weight: normal;
+    }
+}
+
+.tablecontent__dia {
+    font-weight: 700;
+}
+
+.tablecontent__sections {
+    font-weight: 700;
+}
+
+.tablecontent__pricevalue {
+    font-family: squares, arial;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    @include min-screen(768px) {
+        text-align: right;
+    }
+    @include max-screen(767px) {
+        margin-top: 16px;
+    }   
+
+}
+
+.tablecontent__defenitions>* {
+    font-size: map-get($fontSize, normaPlus) !important;
+    border-top: 1px solid #D9D9D9;
+    border-bottom: 1px solid #D9D9D9;
+    padding: 20px 0;
+    font-weight: 400 !important;
+    font-family: $font !important;
+    display: none;
+
+    @include min-screen(1024px) {
+        display: block;
+    }
+}
+
+/********************* Таблица в карточке товара *****************/
+.tabs__truckcard {
+    max-width: 1200px;
+    margin: auto;
+
+    .tablecontent__deatails,
+    .tablecontent__main {
+        max-width: initial;
+    }
+
+    .tablecontent__row {
+        display: block;
+    }
+
+    .tablecontent__row:first-child {
+        grid-template-columns: 15rem 1fr 1fr 1fr 2fr 2fr;
+    }
+
+    .tablecontent__image {
+        display: none;
+    }
+
+    .tablecontent__info {
+        grid-template-columns: 15rem 5fr 2fr;
+    }
+
+    .tablecontent__art {
+        display: block;
+    }
+
+    .tablecontent__pricevalue {
+        font-size: map-get($fontSize, normaPlus);
+    }
+}

@@ -1,0 +1,259 @@
+@charset "UTF-8";
+.btn-icon_left:before, .btn-icon_left:hover:before, .btn-icon_right:after, .btn-icon_right:hover:after {
+  display: inline-block;
+  background-image: url("../img/sprite.svg");
+  -moz-background-size: 25.375em 22em;
+    -o-background-size: 25.375em 22em;
+       background-size: 25.375em 22em;
+}
+
+.promo {
+  margin-bottom: 170px;
+}
+
+@media only screen and (max-width: 991px) {
+  .gulp-pages {
+    display: none;
+  }
+}
+
+.table-wrapper {
+  overflow: auto;
+}
+
+a.lightgallery {
+  border-bottom: none;
+}
+
+ul.slick-dots li button,
+.slick-slide,
+.slick-arrow {
+  outline: none;
+}
+
+.margin {
+  margin: 0 0 170px;
+}
+
+.margin-small {
+  margin: 0 0 75px;
+}
+
+.padding {
+  padding: 170px 0;
+}
+
+.padding__title {
+  padding-top: 50px;
+}
+
+.container-fluid, .tabs__links {
+  /* max-width: 1620px; */
+  max-width: -webkit-calc(100% - 36px + 17px);
+  max-width: -moz-calc(100% - 36px + 17px);
+  max-width: calc(100% - 36px + 17px);
+  margin-left: auto;
+  margin-right: auto;
+  /*@include min-screen(1280px) {
+        max-width: calc(100% - 6rem);
+        //padding: 0 1rem;
+    }*/
+  /*  @include max-screen(1654px) 
+    @include max-screen(1375px) 
+    991 / бургер меню (моб версия)*/
+}
+
+@media only screen and (min-width: 768px) {
+  .container-fluid, .tabs__links {
+    max-width: -webkit-calc(100% - 60px + 17px);
+    max-width: -moz-calc(100% - 60px + 17px);
+    max-width: calc(100% - 60px + 17px);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .container-fluid, .tabs__links {
+    max-width: -webkit-calc(100% - 120px + 17px);
+    max-width: -moz-calc(100% - 120px + 17px);
+    max-width: calc(100% - 120px + 17px);
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .container-fluid, .tabs__links {
+    max-width: -webkit-calc(100% - 200px);
+    max-width: -moz-calc(100% - 200px);
+    max-width: calc(100% - 200px);
+  }
+}
+
+@media only screen and (min-width: 1536px) {
+  .container-fluid, .tabs__links {
+    max-width: -webkit-calc(100% - 300px);
+    max-width: -moz-calc(100% - 300px);
+    max-width: calc(100% - 300px);
+  }
+}
+
+.page-title {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.date-news {
+  font-size: 25px;
+  color: #fff;
+  background-color: #969696;
+  padding: 18px 20px 20px 20px;
+  margin-right: 23px;
+}
+
+.btn-link {
+  font-weight: bold;
+  font-size: 18px;
+  border-bottom: 1px solid #009EE3;
+  color: #009EE3;
+}
+
+.btn-icon {
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 18px;
+}
+
+.btn-icon_left:before {
+  content: "";
+  width: 1.25em;
+  height: 0.5625em;
+  background-position: -23.75em -20.875em;
+  margin-right: 10px;
+}
+
+.btn-icon_left:hover {
+  border-bottom-color: #3C3C3C;
+}
+
+.btn-icon_left:hover:before {
+  content: "";
+  width: 1.25em;
+  height: 0.5625em;
+  background-position: -16.25em -11.5625em;
+  margin-right: 10px;
+}
+
+.link {
+  color: #3C3C3C;
+}
+
+.btn-icon_right:after {
+  content: "";
+  width: 1.8125em;
+  height: 0.5625em;
+  background-position: -21.375em -14.5625em;
+  margin-left: 10px;
+}
+
+.btn-icon_right:hover {
+  border-bottom-color: #3C3C3C;
+}
+
+.btn-icon_right:hover:after {
+  content: "";
+  width: 1.8125em;
+  height: 0.5625em;
+  background-position: -21.375em -14.5625em;
+  margin-right: 10px;
+}
+
+table div {
+  padding-bottom: 5px;
+}
+
+table td,
+table th {
+  width: 52.2%;
+  position: relative;
+}
+
+table td div {
+  z-index: 1;
+  position: relative;
+  display: inline-block;
+  background-color: white;
+  padding-right: 10px;
+}
+
+table td:first-child::after {
+  content: "\A0";
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  right: 10px;
+  border-bottom: 2px dotted #AEAEAE;
+}
+
+.tabs__model {
+  background: #f9f9f9cc;
+  overflow: hidden;
+  position: relative;
+}
+
+.tabs__links {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  overflow-x: scroll;
+}
+
+.tabs__links li {
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  list-style: none;
+  margin-bottom: 22px;
+  margin-right: 3.65vw;
+}
+
+.tabs__links li:before {
+  content: "";
+  display: none;
+}
+
+.tabs__link a {
+  color: #009EE3;
+  text-decoration: none;
+  border: none;
+  font-size: 24px;
+}
+
+.tabs__link.ui-tabs-active a {
+  color: #373939;
+  border-bottom: 2px solid;
+  padding-bottom: 20px;
+}
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0;
+}

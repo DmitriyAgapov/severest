@@ -1,0 +1,405 @@
+.section {
+  position: relative;
+}
+
+.section_features {
+  padding: 60px 0;
+  background-position: clamp(700px, 100%, 100%) 50% !important;
+  background-repeat: no-repeat;
+  -moz-background-size: auto 100% !important;
+    -o-background-size: auto 100% !important;
+       background-size: auto 100% !important;
+}
+
+@media only screen and (min-width: 1024px) {
+  .section_features {
+    padding: 10rem 0;
+  }
+}
+
+.section_count {
+  padding: 60px 0;
+  background-repeat: no-repeat;
+  -moz-background-size: auto 100% !important;
+    -o-background-size: auto 100% !important;
+       background-size: auto 100% !important;
+}
+
+@media only screen and (min-width: 1024px) {
+  .section_count {
+    padding: 10rem 0;
+  }
+}
+
+.section_dealers {
+  padding: 60px 0;
+  background-repeat: no-repeat;
+  -moz-background-size: auto 100%;
+    -o-background-size: auto 100%;
+       background-size: auto 100%;
+}
+
+@media only screen and (min-width: 1024px) {
+  .section_dealers {
+    padding: 10rem 0;
+  }
+}
+
+.section__content {
+  max-width: clamp(700px, 40vw, 100%);
+}
+
+.section__content .title {
+  margin-bottom: 40px;
+}
+
+.section__content .desc {
+  overflow-wrap: break-word;
+  font-size: 18px;
+  padding-left: 10px;
+  letter-spacing: 0;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.section__content .desc .bignum {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.section__content .desc .bigtext {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.titlewhite .title {
+  color: #fff;
+}
+
+.titleblue .title {
+  color: #009ee3;
+}
+
+.textwhite .desc {
+  color: #fff;
+}
+
+.textright {
+  background-position: clamp(-700px, -1%, -webkit-calc(100% - 700px)) 50% !important;
+  background-position: clamp(-700px, -1%, -moz-calc(100% - 700px)) 50% !important;
+  background-position: clamp(-700px, -1%, calc(100% - 700px)) 50% !important;
+}
+
+.textright .section__content {
+  margin-left: auto;
+}
+
+.count {
+  background-position: center;
+  -moz-background-size: contain;
+    -o-background-size: contain;
+       background-size: contain;
+}
+
+.angleleft-gray {
+  position: relative;
+}
+
+@media only screen and (min-width: 1024px) {
+  .angleleft-gray::before {
+    content: '';
+    position: absolute;
+    width: 5rem;
+    height: 10rem;
+    background-color: #f9f9f9;
+    top: 0;
+    left: 0;
+    -webkit-clip-path: polygon(100% 0, 0% 100%, 0 0);
+            clip-path: polygon(100% 0, 0% 100%, 0 0);
+  }
+}
+
+.angleright-blue {
+  position: relative;
+}
+
+@media only screen and (min-width: 1024px) {
+  .angleright-blue::after {
+    content: '';
+    position: absolute;
+    width: 5rem;
+    height: 10rem;
+    background-color: #009ee3;
+    top: -10rem;
+    right: 0;
+    z-index: 1;
+    -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+            clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  }
+}
+
+.angleright-gray {
+  position: relative;
+}
+
+@media only screen and (min-width: 1024px) {
+  .angleright-gray::after {
+    content: '';
+    position: absolute;
+    width: 5rem;
+    height: 10rem;
+    background-color: #fff;
+    top: -10rem;
+    right: 0;
+    z-index: 1;
+    -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+            clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .angleleft-blue::before {
+    content: '';
+    position: absolute;
+    width: 5rem;
+    height: 10rem;
+    background-color: #009ee3;
+    top: 0;
+    left: 0;
+    -webkit-clip-path: polygon(100% 0, 0% 100%, 0 0);
+            clip-path: polygon(100% 0, 0% 100%, 0 0);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .angleleft-orange::before {
+    content: '';
+    position: absolute;
+    width: 5rem;
+    height: 10rem;
+    background-color: #FC8356;
+    top: 0;
+    left: 0;
+    -webkit-clip-path: polygon(100% 0, 0% 100%, 0 0);
+            clip-path: polygon(100% 0, 0% 100%, 0 0);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .angleleft-white::before {
+    content: '';
+    position: absolute;
+    width: 5rem;
+    height: 10rem;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    -webkit-clip-path: polygon(100% 0, 0% 100%, 0 0);
+            clip-path: polygon(100% 0, 0% 100%, 0 0);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .angleright-orange::after {
+    content: '';
+    position: absolute;
+    width: 5rem;
+    height: 10rem;
+    background-color: #FC8356;
+    top: -10rem;
+    right: 0;
+    z-index: 1;
+    -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+            clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .angleright-white::after {
+    content: '';
+    position: absolute;
+    width: 5rem;
+    height: 10rem;
+    background-color: #fff;
+    top: -10rem;
+    right: 0;
+    z-index: 1;
+    -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+            clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  }
+}
+
+.orange {
+  color: #fff;
+  background-color: #FC8356;
+  -moz-background-size: 1100px auto !important;
+    -o-background-size: 1100px auto !important;
+       background-size: 1100px auto !important;
+  background-position: clamp(-1100px, -1%, -webkit-calc(100% - 880px)) 50% !important;
+  background-position: clamp(-1100px, -1%, -moz-calc(100% - 880px)) 50% !important;
+  background-position: clamp(-1100px, -1%, calc(100% - 880px)) 50% !important;
+}
+
+.orange .title {
+  color: white;
+}
+
+.wrap {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  .wrap {
+    -ms-grid-rows: auto;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template: auto / 1fr 1fr;
+  }
+}
+
+.section_dealers {
+  background-position: center;
+}
+
+.section_dealers .title {
+  color: white;
+  margin-bottom: 59px;
+}
+
+.section_dealers .desc {
+  color: white;
+  font-size: 30px;
+  max-width: 600px;
+  padding-left: 10px;
+  letter-spacing: -1.55px;
+  line-height: 1.2;
+}
+
+.section_dealers .desc .bignum {
+  font-weight: 700;
+  font-size: 55px;
+}
+
+.section_dealers .desc .bigtext {
+  font-weight: 700;
+  font-size: 35px;
+}
+
+.blue {
+  color: #fff;
+  background-color: #009ee3;
+}
+
+.blue .title {
+  color: white;
+}
+
+.bluewhite .section__content {
+  padding: 7rem 2rem;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 1023px) {
+  .bluewhite .section__content {
+    padding: 0 0 1rem;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .bluewhite .section__content .desc {
+    text-align: center;
+  }
+}
+
+.bluewhite .section__content .form__block {
+  margin: auto;
+}
+
+.bluewhite .section__content p {
+  color: initial;
+}
+
+@media only screen and (max-width: 1023px) {
+  .form__block form {
+    -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+            align-content: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .bluewhite .section__content:first-child {
+    padding-bottom: 7rem;
+    padding-top: 4rem;
+  }
+}
+
+.bluewhite .section__content:first-child p {
+  color: #fff;
+}
+
+.bluewhite.form .section__content:first-child:before {
+  content: '';
+  position: absolute;
+  background-image: url(../img/bg-call.png);
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
+  z-index: -1;
+}
+
+@media only screen and (max-width: 1023px) {
+  .bluewhite.form .section__content:first-child:before {
+    width: 100%;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 45%, 0 55%);
+            clip-path: polygon(0 0, 100% 0, 100% 45%, 0 55%);
+  }
+}
+
+.bluewhite.form {
+  background-position: 0 0;
+  -moz-background-size: 100% auto;
+    -o-background-size: 100% auto;
+       background-size: 100% auto;
+  padding: 0;
+  margin: 0;
+}
+
+.bluewhite.form h4 {
+  font-family: 'squares';
+  color: #fff;
+  font-size: 26px;
+}
+
+.bluewhite.form span {
+  font-family: 'squares';
+  color: #fff;
+  font-size: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+  .bluewhite.form span {
+    font-size: 28px;
+  }
+}

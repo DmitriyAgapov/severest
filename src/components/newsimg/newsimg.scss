@@ -1,0 +1,31 @@
+@import "../../styles/helpers/_helpers";
+
+.slider-swiper {
+    position: relative;
+    overflow: hidden;
+    margin: 65px 0 0px;
+    padding-bottom: 6rem;
+}
+
+.swiper-pagination {
+    position: absolute;
+    bottom: 3rem !important;
+}
+
+.swiper-pagination-bullet {
+    @include svgsprite(dots);
+    border: none;
+    margin: 0;
+    border-radius: 0;
+    background-color: transparent;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    @include svgsprite(dots-active);
+    border: none;
+    margin: 0;
+    border-radius: 0;
+    background-color: transparent;
+    opacity: 1;
+}

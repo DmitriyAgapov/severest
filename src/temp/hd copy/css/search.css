@@ -1,0 +1,127 @@
+.search .form-actions:before {
+  display: inline-block;
+  background-image: url("../img/sprite.svg");
+  -moz-background-size: 25.375em 22em;
+    -o-background-size: 25.375em 22em;
+       background-size: 25.375em 22em;
+}
+
+.search {
+  width: 246px;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  position: absolute;
+  right: 0;
+}
+
+.search.focused {
+  width: 246px;
+}
+
+.search.focused .form-item {
+  opacity: 1;
+  visibility: visible;
+}
+
+.search form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+@media only screen and (max-width: 1654px) {
+  .search {
+    width: 39px;
+  }
+  .search:hover {
+    width: 246px;
+    /* form {
+                position: absolute;
+                right: 0;
+                top: -20px;
+            } */
+    /* .form-text {
+                right: 0;
+            } */
+  }
+  .search:hover .form-item {
+    opacity: 1;
+    visibility: visible;
+    background-color: white;
+  }
+}
+
+.search .form-item {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+     -moz-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 0;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+@media only screen and (max-width: 1654px) {
+  .search .form-item {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.search .form-text {
+  background-color: transparent;
+  border: 1px solid rgba(0, 158, 227, 0.5);
+  padding: 11px 44px 10px 16px;
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
+}
+
+@media only screen and (max-width: 1654px) {
+  .search .form-text {
+    /* transition: all 0.25s ease-in-out; */
+    /* right: -100%; */
+  }
+}
+
+.search .form-actions {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  bottom: 0;
+  width: 50px;
+}
+
+.search .form-actions:before {
+  content: '';
+  width: 1.3125em;
+  height: 1.375em;
+  background-position: -23.75em -17.0625em;
+  top: 0;
+  right: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.search .form-submit {
+  position: relative;
+  border: none;
+  background-color: transparent;
+  text-indent: -999999px;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  z-index: 1;
+  cursor: pointer;
+}

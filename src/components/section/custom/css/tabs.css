@@ -1,0 +1,72 @@
+.tabs h2 {
+  color: #fff;
+  margin-left: 8px;
+}
+
+.tabs__item .tabs__bl {
+  min-height: 240px;
+}
+
+.tabs__item h3 {
+  margin: 26px 0 0 10px;
+  letter-spacing: 0.1px;
+}
+
+.tabs__items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -webkit-box-align: end;
+  -webkit-align-items: end;
+     -moz-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+@media only screen and (max-width: 1024px) {
+  .tabs__items {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.links {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  margin-left: 8px;
+  margin-bottom: 40px;
+}
+
+.links li {
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  list-style: none;
+  margin-bottom: 16px;
+  margin-right: 3.65vw;
+}
+
+.links li:before {
+  content: "";
+  display: none;
+}
+
+.links__link a {
+  color: #009EE3;
+  text-decoration: none;
+  border: none;
+  font-size: 24px;
+}
+
+.links__link.ui-tabs-active a {
+  color: #373939;
+  border-bottom: 2px solid;
+  padding-bottom: 20px;
+}

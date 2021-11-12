@@ -1,0 +1,57 @@
+@import '../../../styles/helpers/_helpers';
+
+.search-m {
+    width: 100%;
+    margin-top: 25px;
+
+    form {
+        display: flex;
+        position: relative;
+    }
+
+    .form-item {
+        flex: 1;
+        margin: 0;
+    }
+
+    .form-text {
+        background-color: transparent;
+        border: 1px solid #fff;
+        padding: 11px 44px 10px 16px;
+        border-radius: 0;
+        color: #fff;
+        font-size: map-get($fontSize, normaPlus);
+    }
+
+    .form-actions {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+        bottom: 0;
+        width: 50px;
+
+        &:before {
+            content: '';
+            @include svgsprite(search-w);
+            top: 0;
+            right: 0;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+        }
+    }
+
+    .form-submit {
+        position: relative;
+        border: none;
+        background-color: transparent;
+        text-indent: -999999px;
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        z-index: 1;
+        cursor: pointer;
+    }
+}

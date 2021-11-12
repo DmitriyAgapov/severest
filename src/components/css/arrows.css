@@ -1,0 +1,58 @@
+.arrow-left, .arrow-left:hover, .arrow-right, .arrow-right:hover, .arrow-prev, .arrow-prev:hover, .arrow-next, .arrow-next:hover {
+  display: inline-block;
+  background-image: url("../img/sprite.svg");
+  -moz-background-size: 25.375em 22em;
+    -o-background-size: 25.375em 22em;
+       background-size: 25.375em 22em;
+}
+
+.arrow-left {
+  width: 1.625em;
+  height: 4.1875em;
+  background-position: -21.375em -5.0625em;
+  -webkit-transform: rotateY(180deg);
+     -moz-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.arrow-left:hover {
+  width: 1.625em;
+  height: 4.1875em;
+  background-position: -21.375em -9.8125em;
+}
+
+.arrow-right {
+  width: 1.625em;
+  height: 4.1875em;
+  background-position: -21.375em -5.0625em;
+}
+
+.arrow-right:hover {
+  width: 1.625em;
+  height: 4.1875em;
+  background-position: -21.375em -9.8125em;
+}
+
+.arrow-prev {
+  width: 4.25em;
+  height: 1.6875em;
+  background-position: -10.8125em -12.9375em;
+}
+
+.arrow-prev:hover {
+  width: 4.1875em;
+  height: 1.625em;
+  background-position: -15.625em -12.9375em;
+}
+
+.arrow-next {
+  width: 4.25em;
+  height: 1.6875em;
+  background-position: -16.25em -9.3125em;
+}
+
+.arrow-next:hover {
+  width: 4.1875em;
+  height: 1.625em;
+  background-position: -7.3125em -15.4375em;
+}

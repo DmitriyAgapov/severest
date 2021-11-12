@@ -1,0 +1,49 @@
+.bc__sep {
+  display: inline-block;
+  background-image: url("../img/sprite.svg");
+  -moz-background-size: 25.375em 22em;
+    -o-background-size: 25.375em 22em;
+       background-size: 25.375em 22em;
+}
+
+.bc {
+  display: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 16px;
+  margin-top: 2.25rem;
+}
+
+.bc > a {
+  border-bottom: none;
+}
+
+@media only screen and (min-width: 1024px) {
+  .bc {
+    display: block;
+  }
+}
+
+.bc__container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bc__sep {
+  width: 0.4375em;
+  height: 0.625em;
+  background-position: -20.375em -12.9375em;
+  text-indent: -999999px;
+  display: inline-block;
+  margin: 3px 9px 0 12px;
+  margin: 0 5px;
+}

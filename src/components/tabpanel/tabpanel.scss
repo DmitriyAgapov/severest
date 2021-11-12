@@ -1,0 +1,54 @@
+@import "../../styles/helpers/_helpers";
+@import "../../styles/_style";
+
+.tabs__model {
+    background: #f9f9f9cc;
+    //margin-bottom: 8rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.tabs__links {
+    //@extend .container-fluid;
+    display: flex;
+    list-style-type: none;
+    overflow-x: scroll;
+    scrollbar-width: none;
+
+    li {
+        min-width: fit-content;
+        list-style: none;
+        margin-bottom: 22px;
+        margin-right: 3.65vw;
+
+        &:before {
+            content: "";
+            display: none;
+        }
+    }
+}
+
+.tabs__link {
+    scrollbar-width: none;
+
+    a {
+        color: $color-blue;
+        text-decoration: none;
+        border: none;
+        font-size: 24px;
+    }
+
+    &.ui-tabs-active {
+        a {
+            color: $color-main;
+            border-bottom: 2px solid;
+            padding-bottom: 20px;
+        }
+    }
+}
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0;
+}

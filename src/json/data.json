@@ -1,0 +1,11 @@
+{
+    "item": [
+        {
+            "title": "Автоцистерны на шасси test item",
+            "image": "temp/cist1.jpg",
+            "content": "some test content item",
+            "description": "some test content item description",
+            "items": ""
+        }
+    ]
+}

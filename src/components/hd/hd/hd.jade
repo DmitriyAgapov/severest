@@ -1,0 +1,23 @@
+// hd (css)
++b.hd
+    
+    .container-fluid
+        +e.top
+            +e.phones
+                +e.A.phone(href="tel:88001234567") 8 800 123-45-67
+            +e.email
+                a(href="mailto:mail@severest.ru") mail@severest.ru
+            +e.recall
+                a.use-ajax(href="#") Заказать звонок
+            a.btn.btn-three.use-ajax(href="#") Оставить заявку
+        +e.bottom
+            +e.logos
+                a(href="/")
+                    img(src="img/logo.png")
+            include ../nv-menu/nv-menu
+            include ../search/search
+        
+            
+        //-include ../logo/logo
+        //- include ../dealer/dealer
+// КОНЕЦ: hd (css)

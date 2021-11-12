@@ -1,0 +1,17 @@
+@import '../../../styles/helpers/_helpers';
+
+.hd-m {
+    display: block;
+
+    @include min-screen(1024px) {
+        display: none;
+    }
+}
+
+.hd-m__inner {
+    background: #009ee3;
+    z-index: 5;
+    position: inherit;
+    align-items: center;
+    display: flex;
+}

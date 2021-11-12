@@ -1,0 +1,28 @@
+@import "../../../styles/helpers/_helpers";
+
+.menu-m-panel {
+    position: fixed;
+    z-index: 201;
+    background-color: #009EE3;
+    height: 100%;
+    width: 100%;
+    top: -100%;
+    left: 0;
+    padding: 0 15px 35px;
+    transition: all .25s ease-in-out;
+    overflow: auto;
+    box-sizing: border-box;
+
+
+    &.open {
+        top: 0;
+    }
+}
+
+.menu-m-panel__hd {
+    display: flex;
+    justify-content: space-between;
+    height: 72px;
+    align-items: center;
+    position: relative;
+}

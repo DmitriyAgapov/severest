@@ -1,0 +1,101 @@
+@import '../../../styles/helpers/_helpers';
+
+.search {
+    width: 246px;
+    transition: all 1s ease-in-out;
+    position: absolute;
+    right: 0;
+
+    &.focused {
+        width: 246px;
+
+        .form-item {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    form {
+        display: flex;
+        position: relative;
+    }
+
+    @include max-screen(1654px) {
+        width: 39px;
+
+        &:hover {
+            width: 246px;
+
+            /* form {
+                position: absolute;
+                right: 0;
+                top: -20px;
+            } */
+
+            .form-item {
+                opacity: 1;
+                visibility: visible;
+                //background-color: white;
+            }
+
+            /* .form-text {
+                right: 0;
+            } */
+        }
+    }
+
+    .form-item {
+        flex: 1;
+        margin: 0;
+        transition: all 1s ease-in-out;
+
+        @include max-screen(1654px) {
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+
+    .form-text {
+        background-color: transparent;
+        border: 1px solid rgba(0, 158, 227, 0.5);
+        padding: 11px 44px 10px 16px;
+        border-radius: 0;
+
+        @include max-screen(1654px) {
+            /* transition: all 0.25s ease-in-out; */
+            /* right: -100%; */
+        }
+    }
+
+    .form-actions {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+        bottom: 0;
+        width: 50px;
+
+        &:before {
+            content: '';
+            @include svgsprite(search);
+            top: 0;
+            right: 0;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+        }
+    }
+
+    .form-submit {
+        position: relative;
+        border: none;
+        background-color: transparent;
+        text-indent: -999999px;
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        z-index: 1;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,9 @@
+.nd-news {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto 170px;
+}
+
+.nd-news__data {
+  margin-bottom: 21px;
+}

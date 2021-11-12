@@ -1,0 +1,36 @@
++b.introcontent
+    +e.image
+        picture           
+            source(srcset="img/introcontent/truck.png", media="(min-width: 768px)")      
+            img(src="img/introcontent/truck-withoubg.png")   
+    +e.heading 
+        H1 Автоцистерны для нефти
+    +e.description
+        .item
+            +e.title 
+                SPAN Объем цистерны 
+            +e.icon.cistern
+                object(type="image/svg+xml", data="img/icons/volume-cist.svg", width="50", height="30") Your browser does not support SVG
+            +e.value-digits 10-30
+                span м              
+                    sup
+                        small 3
+        .item
+            +e.title 
+                SPAN Базовые шасси
+            +e.icon.chassis
+                 object(type="image/svg+xml", data="img/icons/truck.svg", width="56", height="30") Your browser does not support SVG
+            +e.value SCANIA, IVECO, MERCEDES, MAN 
+                span и другие грузовые шасси
+        .item
+            +e.title 
+                SPAN Сечение
+            +e.icon.sechenie
+                 object(type="image/svg+xml", data="img/icons/sechenie.svg", width="40", height="32") Your browser does not support SVG
+            +e.value Чемодан, Элипс
+        .item
+            +e.title.vis 
+                SPAN Отсеки
+            +e.icon.otseki
+                object(type="image/svg+xml", data="img/icons/otseki.svg", width="50", height="25") Your browser does not support SVG
+            +e.value-digits 1-3

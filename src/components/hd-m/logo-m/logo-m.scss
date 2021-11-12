@@ -1,0 +1,18 @@
+@import "../../../styles/helpers/_helpers";
+
+.logo-m {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.logo-m__link {
+    background-image: url("../img/logo-w.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    height: 55px;
+    width: 100%;
+    border-bottom: none;
+    text-indent: -999999px;
+}

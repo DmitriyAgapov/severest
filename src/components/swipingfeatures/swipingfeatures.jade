@@ -1,0 +1,22 @@
+- const zapas = [{"title":"Большой запас прочности","textposition":"left swiper-slide","backgroundcolor":"section_features white norightcorner titleblue","background":"img/bg-features-zapas-prochnosti.png","description":"Надежность конструкции протестирована в электронном симулятрое <strong>SolidWorks simulation</strong> при завышенной в 2 раза нагрузке и в реальных условиях."}];
+- const parts = [{"title":"Комплектующие от ведущих производителей","textposition":"textright swiper-slide","backgroundcolor":"section_features titleblue","background":"img/bg-features-bpw.png","description":"Оси и подвески <strong>SAF</strong> и <strong>BPW</strong>, тормозные системы <strong>WABCO</strong> с системой <strong>EBS</strong> и другие комплетующие признанные во всем мире и проверенные временем."}];
+- const paint = [{"title":"Качественная технология покраски","textposition":"left swiper-slide","backgroundcolor":"section_features titleblue","background":"img/bg-features-paint.png","description":"Предварительная дробеструйная обработка поверхности, многослойная окраска немецкими 2-компонентными эмалями делает покрытие практически вечным."}];
+- const lightconstr = [{"title":"Облегченная конструкция","textposition":"textright swiper-slide","backgroundcolor":"section_features titleblue","background":"img/bg-features-light-construct.png","description":"Используем высокопрочные зарубежные стали SSAB S700 в наиболее нагруженных местах для снижения массы конструкции с сохранением прочности."}];
+- const brandcist = [{"title":"Брендирование цистерны","textposition":"left swiper-slide","backgroundcolor":"section_features titleblue","background":"img/bg-features-brand-cist.png","description":"По вашему желанию цистерна может быть облицована зеркальной сталью либо окрашена в соответствии с Вашим брендбуком"}];
+- const svarka = [{"title":"100% надежность сварки","textposition":"textright swiper-slide","backgroundcolor":"section_features titleblue","background":"img/bg-features-svarka.png","description":"Многоступенчатая система контроля качества сварных соединений, включающая ультразвуковой контроль, проверку на герметичность и проверку давлением"}];
+
+.slider-swiper
+    .swiper-wrapper
+        for item in zapas  
+            +sections(item) 
+        for item in parts  
+            +sections(item) 
+        for item in paint  
+            +sections(item) 
+        for item in lightconstr  
+            +sections(item)
+        for item in brandcist  
+            +sections(item)
+        for item in svarka  
+            +sections(item)
+    .pagination

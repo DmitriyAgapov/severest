@@ -1,0 +1,57 @@
+@import "../../styles/helpers/_helpers";
+
+.block__block-with-arrows {
+    .block__arrows {
+        display: none;
+    }
+
+    @include min-screen(1024px) {
+        .block__arrows {
+            display: block;
+        }
+
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        flex-wrap: nowrap;
+
+    }
+}
+
+.arrow-left {
+    @include svgsprite(arrow-b);
+    transform: rotateY(180deg);
+    margin: 0 0.5rem;
+
+    &:hover {
+        @include svgsprite(arrow-b-blue);
+    }
+}
+
+.arrow-right {
+    @include svgsprite(arrow-b);
+    margin: 0 0.5rem;
+
+
+    &:hover {
+        @include svgsprite(arrow-b-blue);
+    }
+}
+
+.arrow-prev {
+    @include svgsprite(arrow-prev);
+
+
+    &:hover {
+        @include svgsprite(arrow-prev-p);
+    }
+}
+
+.arrow-next {
+    @include svgsprite(arrow-next);
+
+
+    &:hover {
+        @include svgsprite(arrow-next-p);
+    }
+}

@@ -1,0 +1,25 @@
+@import "../../styles/helpers/_helpers";
+
+.intro {
+    display: flex;
+    min-height: 90vh;
+}
+
+.intro__flex {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+    p {
+
+        font-size: 1rem;
+        max-width: 14.5rem;
+        box-sizing: border-box;
+        margin: auto;
+        text-align: center;
+    }
+
+    .btn__corner {
+        margin-top: 2.25rem;
+    }
+}

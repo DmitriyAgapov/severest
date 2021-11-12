@@ -1,0 +1,45 @@
+.swiper-pagination-bullet, .swiper-pagination-bullet-active {
+  display: inline-block;
+  background-image: url("../img/sprite.svg");
+  -moz-background-size: 25.375em 22em;
+    -o-background-size: 25.375em 22em;
+       background-size: 25.375em 22em;
+}
+
+.slider-swiper {
+  position: relative;
+  overflow: hidden;
+  margin: 65px 0 0px;
+  padding-bottom: 6rem;
+}
+
+.swiper-pagination {
+  position: absolute;
+  bottom: 3rem !important;
+}
+
+.swiper-pagination-bullet {
+  width: 2.1875em;
+  height: 1.5625em;
+  background-position: -14.8125em -15.4375em;
+  border: none;
+  margin: 0;
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
+  background-color: transparent;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  width: 2.1875em;
+  height: 1.5625em;
+  background-position: -12.0625em -15.4375em;
+  border: none;
+  margin: 0;
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
+  background-color: transparent;
+  opacity: 1;
+}

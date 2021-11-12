@@ -1,0 +1,119 @@
+.hd__phones::before, .hd__email::before, .hd__logo {
+  display: inline-block;
+  background-image: url("../img/sprite.svg");
+  -moz-background-size: 25.375em 22em;
+    -o-background-size: 25.375em 22em;
+       background-size: 25.375em 22em;
+}
+
+.hd {
+  position: relative;
+}
+
+@media only screen and (max-width: 1200px) {
+  .hd {
+    display: none;
+  }
+}
+
+.hd__top {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+     -moz-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-top: 18px;
+  margin-bottom: 25px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hd__phones,
+.hd__email {
+  margin-right: 54px;
+  position: relative;
+}
+
+.hd__phones {
+  padding-left: 23px;
+  font-style: normal;
+  font-weight: bold;
+  position: relative;
+  font-size: 17px;
+}
+
+.hd__phones::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 0.875em;
+  height: 0.875em;
+  background-position: -19.75em -15.4375em;
+}
+
+.hd__phone {
+  color: #373939;
+  border-bottom: none;
+}
+
+.hd__email {
+  padding-left: 28px;
+  font-size: 14px;
+}
+
+.hd__email::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 1.25em;
+  height: 0.875em;
+  background-position: -13.9375em -18.1875em;
+}
+
+.hd__recall {
+  margin-right: 49px;
+  font-size: 14px;
+}
+
+.hd__logo {
+  width: 20.5em;
+  height: 3.9375em;
+  background-position: -0.3125em -0.3125em;
+  background-repeat: no-repeat;
+  margin-right: 6rem;
+}
+
+.hd__bottom {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 60px;
+}
+
+.logos {
+  max-width: 20rem;
+  width: 100%;
+  height: auto;
+}
+
+.hd__logos {
+  width: 18rem;
+  margin-right: auto;
+}
